@@ -33,11 +33,11 @@ info = dict(config.items('tryton'))
 for key in ('depends', 'extras_depend', 'xml'):
     if key in info:
         info[key] = info[key].strip().splitlines()
-version = info.get('version', '0.0.1')
+version = info.get('version', '0.0.2')
 major_version, minor_version, _ = version.split('.', 2)
 major_version = int(major_version)
 minor_version = int(minor_version)
-name = 'trytond_account_invoice_rebate'
+name = 'symetrie_account_invoice_rebate'
 
 download_url = 'http://downloads.tryton.org/%s.%s/' % (
     major_version, minor_version)
