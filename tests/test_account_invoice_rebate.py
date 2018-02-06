@@ -8,8 +8,8 @@ from trytond.tests.test_tryton import (
 
 
 class AccountInvoiceRebateTestCase(ModuleTestCase):
-    'Test AccountInvoiceRebate module'
-    module = 'symetrie_account_invoice_rebate'
+    'Test Account Invoice Rebate module'
+    module = 'account_invoice_rebate'
 
 
 def suite():

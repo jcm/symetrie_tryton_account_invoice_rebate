@@ -9,4 +9,4 @@ __all__ = ['register']
 def register():
     Pool.register(
         invoice.InvoiceLine,
-        module='symetrie_account_invoice_rebate', type_='model')
+        module='account_invoice_rebate', type_='model')
