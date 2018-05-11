@@ -66,6 +66,8 @@ Invoice products::
     >>> invoice_line.unit_price = Decimal('15')
     >>> invoice_line.rebate
     Decimal('0.00')
+    >>> invoice_line.amount
+    Decimal('15.00')
     >>> invoice.save()
     >>> invoice_line, = invoice.lines
     >>> invoice_line.rebate
@@ -73,6 +75,8 @@ Invoice products::
     >>> invoice_line.unit_price = Decimal('13')
     >>> invoice_line.rebate
     Decimal('13.33')
+    >>> invoice_line.amount
+    Decimal('13.00')
     >>> invoice.save()
     >>> invoice_line, = invoice.lines
     >>> invoice_line.rebate
@@ -80,6 +84,10 @@ Invoice products::
     >>> invoice_line.rebate = Decimal('0')
     >>> invoice_line.unit_price
     Decimal('15.0000')
+    >>> invoice_line.amount
+    Decimal('15.00')
     >>> invoice_line.rebate = Decimal('50')
     >>> invoice_line.unit_price
     Decimal('7.5000')
+    >>> invoice_line.amount
+    Decimal('7.50')
