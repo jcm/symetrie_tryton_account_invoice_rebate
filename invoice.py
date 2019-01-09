@@ -8,8 +8,7 @@ from trytond.pool import PoolMeta
 __all__ = ['InvoiceLine']
 
 
-class InvoiceLine:
-    __metaclass__ = PoolMeta
+class InvoiceLine(metaclass=PoolMeta):
     __name__ = 'account.invoice.line'
 
     list_price = fields.Numeric('List Price', digits=(16, 4),
