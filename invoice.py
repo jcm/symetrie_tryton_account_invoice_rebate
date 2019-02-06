@@ -23,7 +23,7 @@ class InvoiceLine(metaclass=PoolMeta):
                 },
             depends=['type', 'product']),
         'on_change_with_rebate', 'set_rebate')
-
+    
     @fields.depends('list_price', 'unit_price')
     def on_change_with_rebate(self, name=None):
         if not self.list_price:
